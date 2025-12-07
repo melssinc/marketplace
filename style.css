@@ -1,0 +1,402 @@
+/* ----------------------------------------
+   RESET Y TIPOGRAFÍA
+----------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------
+   HEADER
+----------------------------------------- */
+.header {
+    width: 100%;
+    padding: 22px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav a {
+    color: #cfcfcf;
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+/* ----------------------------------------
+   HERO
+----------------------------------------- */
+.hero {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9));
+    z-index: 2;
+}
+
+/* Imagen de entrenamiento */
+.hero-split.left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg')
+        no-repeat center center/cover;
+    filter: brightness(45%);
+}
+
+/* Imagen de salud mental */
+.hero-split.right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/8353794/pexels-photo-8353794.jpeg')
+        no-repeat center center/cover;
+    filter: brightness(45%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    color: #cfcfcf;
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.btn-primary, .btn-outline {
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #0A84FF;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0570d4;
+}
+
+.btn-outline {
+    border: 2px solid #ffffff;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: black;
+}
+
+.btn-primary.full {
+    width: 100%;
+}
+
+/* ----------------------------------------
+   SECCIONES
+----------------------------------------- */
+.section {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #bdbdbd;
+    font-size: 17px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ----------------------------------------
+   CÓMO FUNCIONA
+----------------------------------------- */
+.steps {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.step {
+    max-width: 260px;
+}
+
+.step h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.step p {
+    color: #bdbdbd;
+}
+
+/* ----------------------------------------
+   FORMULARIOS
+----------------------------------------- */
+.form-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 420px;
+    margin: auto;
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #222;
+}
+
+form label {
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: white;
+    margin-bottom: 10px;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+/* ----------------------------------------
+   GRID DE PROFESIONALES
+----------------------------------------- */
+.prof-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prof-card {
+    width: 260px;
+    padding: 28px 20px;
+    background: #111;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid #1f1f1f;
+    transition: 0.3s;
+}
+
+.prof-card:hover {
+    transform: translateY(-6px);
+    border-color: #0A84FF;
+}
+
+.prof-img {
+    width: 95px;
+    height: 95px;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 15px auto;
+    border: 2px solid #0A84FF;
+}
+
+.prof-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.prof-specialty {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.prof-exp {
+    color: #8f8f8f;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+/* ----------------------------------------
+   PERFIL PROFESIONAL
+----------------------------------------- */
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    background: #111;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #1f1f1f;
+    text-align: center;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 20px auto;
+    border: 3px solid #0A84FF;
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-specialty {
+    color: #cfcfcf;
+    font-size: 16px;
+}
+
+.profile-exp {
+    color: #8f8f8f;
+    margin-bottom: 20px;
+}
+
+.profile-bio {
+    color: #d0d0d0;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* SERVICIOS Y PRECIOS */
+.services-box,
+.price-box {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.services-box h3,
+.price-box h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.services-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-box ul li {
+    color: #cfcfcf;
+    padding: 6px 0;
+    border-bottom: 1px solid #222;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #cfcfcf;
+    border-bottom: 1px solid #222;
+}
+
+/* ----------------------------------------
+   FOOTER
+----------------------------------------- */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #000;
+    color: #8a8a8a;
+    margin-top: 60px;
+}
+
+/* ----------------------------------------
+   RESPONSIVE
+----------------------------------------- */
+@media(max-width: 900px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-split.left,
+    .hero-split.right {
+        display: none;
+    }
+
+    .hero-overlay {
+        background: rgba(0,0,0,0.8);
+    }
+}
+
+@media(max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
