@@ -1,243 +1,131 @@
-/* ------------------------------
-   ESTILO GLOBAL - TECH AZUL
---------------------------------*/
-
-* {
+/* =========================================================
+   ESTILOS GENERALES
+   ========================================================= */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
 }
 
-body {
-    background: #f5f8ff;
-    color: #1a1a1a;
-    line-height: 1.5;
-}
-
-/* Tipografía Importada */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-
-/* ------------------------------
-   NAVBAR
---------------------------------*/
-
-.navbar {
-    width: 100%;
-    background: white;
-    padding: 20px 40px;
+/* =========================================================
+   HEADER
+   ========================================================= */
+.header {
+    background: #ffffff;
+    padding: 16px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e3e8f0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #2563eb;
+    font-size: 22px;
+    font-weight: bold;
+    color: #005fcc;
 }
 
-.navbar nav a {
-    margin-left: 25px;
+.nav a {
+    margin-left: 20px;
     text-decoration: none;
-    color: #1e293b;
+    color: #333;
     font-weight: 500;
-    transition: 0.2s;
 }
 
-.navbar nav a:hover {
-    color: #2563eb;
+.nav a:hover {
+    color: #005fcc;
 }
 
-
-/* ------------------------------
-   HERO
---------------------------------*/
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 40px;
-    background: linear-gradient(135deg, #dbeafe, #ffffff);
-}
-
-.hero-content {
-    width: 50%;
-}
-
-.hero-content h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 18px;
-    color: #1e3a8a;
-}
-
-.hero-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #334155;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 20px;
-}
-
-.btn-primary {
-    background: #2563eb;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.2s;
-}
-
-.btn-primary:hover {
-    background: #1e40af;
-}
-
-.btn-secondary {
-    background: transparent;
-    color: #2563eb;
-    padding: 12px 22px;
-    border: 2px solid #2563eb;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.2s;
-}
-
-.btn-secondary:hover {
-    background: #2563eb;
-    color: white;
-}
-
-.btn-secondary, .btn-primary {
-    cursor: pointer;
-}
-
-.hero-image {
-    width: 380px;
-    height: 380px;
-    background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=900&q=80');
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.25);
-}
-
-
-/* ------------------------------
-   SECCIÓN - CÓMO FUNCIONA
---------------------------------*/
-
-.steps-section {
-    padding: 70px 40px;
+/* =========================================================
+   SECCIONES GENERALES
+   ========================================================= */
+.section {
+    padding: 50px 20px;
     text-align: center;
 }
 
-.steps-section h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #1e3a8a;
-    margin-bottom: 40px;
-}
-
-.steps-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.step-card {
-    width: 300px;
-    padding: 25px;
-    background: white;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
-    text-align: left;
-}
-
-.step-card h3 {
-    font-size: 20px;
-    font-weight: 700;
+.title {
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
-.step-card p {
-    color: #475569;
-}
-
-
-/* ------------------------------
-   FORMULARIO CLIENTES
---------------------------------*/
-
-.form-section {
-    padding: 70px 40px;
-    background: #f0f4ff;
-}
-
-.form-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #1e3a8a;
-}
-
-.form-box {
-    max-width: 420px;
-    margin: auto;
-    padding: 30px;
-    background: white;
-    border-radius: 15px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
-}
-
-form label {
-    display: block;
-    font-weight: 600;
-    margin-top: 15px;
-    color: #334155;
-}
-
-form input, form select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    margin-top: 5px;
+.subtitle {
     font-size: 16px;
+    color: #555;
 }
 
-.full-btn {
+/* =========================================================
+   BOTONES
+   ========================================================= */
+.btn-primary {
+    background: #005fcc;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background: #0048a1;
+}
+
+.btn-primary.full {
+    width: 80%;
+    margin: 15px auto 0 auto;
+    display: block;
+}
+
+/* =========================================================
+   GRID DE PROFESIONALES
+   ========================================================= */
+.prof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.prof-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.prof-img {
     width: 100%;
-    margin-top: 25px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
 }
 
-.full-btn:hover {
-    background: #1d4ed8;
+.prof-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
 }
 
+.prof-specialty,
+.prof-exp {
+    font-size: 14px;
+    color: #555;
+}
 
-/* ------------------------------
+/* =========================================================
    FOOTER
---------------------------------*/
-
+   ========================================================= */
 .footer {
-    background: #1e3a8a;
+    background: #005fcc;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 14px;
+    padding: 15px;
+    margin-top: 40px;
 }
