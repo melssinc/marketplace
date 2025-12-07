@@ -1,141 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VITALE — Bienestar Integral</title>
+    <title>Marketplace de Profesionales - Tu Conexión en Fitness, Nutrición y Salud Mental</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">VITALE</div>
-        <nav class="nav">
-            <a href="#como-funciona">Cómo funciona</a>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">ProHealth</div>
+        <nav>
+            <a href="#como-funciona">Cómo Funciona</a>
+            <a href="#clientes">Clientes</a>
             <a href="profesionales.html">Profesionales</a>
-            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-overlay"></div>
-
         <div class="hero-content">
-            <h1>Tu bienestar comienza aquí:<br>entrenamiento, nutrición y salud mental.</h1>
-            <p class="hero-sub">Conecta con profesionales verificados que entienden tus objetivos físicos y emocionales.</p>
+            <h1>Conecta con Entrenadores, Nutricionistas y Expertos en Salud Mental</h1>
+            <p>La plataforma inteligente que te conecta con profesionales confiables según tus objetivos físicos y mentales.</p>
 
             <div class="hero-buttons">
-                <a href="#clientes" class="btn-primary">Quiero un Profesional</a>
-                <a href="#profesionales-form" class="btn-outline">Soy Profesional</a>
+                <a href="#clientes" class="btn-primary">Soy Cliente</a>
+                <a href="profesionales.html" class="btn-secondary">Ver Profesionales</a>
             </div>
         </div>
 
-        <!-- IMAGEN DIVIDIDA -->
-        <div class="hero-split left"></div>
-        <div class="hero-split right"></div>
+        <div class="hero-image"></div>
     </section>
 
-    <!-- SECCIÓN ENTRENADORES -->
-    <section class="section">
-        <h2 class="title">Entrenamiento Personal</h2>
-        <p class="subtitle">Entrenadores certificados listos para transformar tu cuerpo con planes reales.</p>
-    </section>
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona" class="steps-section">
+        <h2>Cómo Funciona</h2>
 
-    <!-- SECCIÓN NUTRICIÓN -->
-    <section class="section">
-        <h2 class="title">Nutrición & Hábitos</h2>
-        <p class="subtitle">Planes personalizados para comer mejor sin dietas extremas.</p>
-    </section>
-
-    <!-- SECCIÓN SALUD MENTAL -->
-    <section class="section">
-        <h2 class="title">Salud Mental</h2>
-        <p class="subtitle">Psicólogos y coaches listos para ayudarte a manejar estrés, ansiedad y enfoque emocional.</p>
-    </section>
-
-    <!-- COMO FUNCIONA -->
-    <section id="como-funciona" class="section">
-        <h2 class="title">Cómo Funciona</h2>
-
-        <div class="steps">
-            <div class="step">
-                <h3>1. Cuéntanos tu objetivo</h3>
-                <p>Entrenamiento, nutrición o salud mental.</p>
+        <div class="steps-container">
+            <div class="step-card">
+                <h3>1. Indica lo que necesitas</h3>
+                <p>Llena un formulario rápido con tu país y objetivo: bajar grasa, ganar músculo o mejorar tu salud mental.</p>
             </div>
 
-            <div class="step">
+            <div class="step-card">
                 <h3>2. Te conectamos con el profesional ideal</h3>
-                <p>Recibes una recomendación personalizada.</p>
+                <p>Según tu caso, te presentamos entrenadores, nutricionistas o psicólogos verificados.</p>
             </div>
 
-            <div class="step">
-                <h3>3. Empieza tu proceso</h3>
-                <p>Hablas directo con el profesional por WhatsApp.</p>
+            <div class="step-card">
+                <h3>3. Habla directamente con el profesional</h3>
+                <p>Conecta vía WhatsApp o mensaje privado. Rápido, seguro y sin complicaciones.</p>
             </div>
         </div>
     </section>
 
-    <!-- FORMULARIO CLIENTES -->
+    <!-- FORMULARIO PARA CLIENTES -->
     <section id="clientes" class="form-section">
-        <h2 class="title">Formulario para Clientes</h2>
+        <h2>Formulario para Clientes</h2>
 
-        <form name="clienteForm" method="POST" data-netlify="true">
-            <label>Nombre</label>
+        <form name="clienteForm" method="POST" data-netlify="true" class="form-box">
+            <label>Nombre:</label>
             <input type="text" name="nombre" required>
 
-            <label>País</label>
+            <label>País:</label>
             <input type="text" name="pais" required>
 
-            <label>¿Qué necesitas?</label>
+            <label>Objetivo:</label>
             <select name="objetivo">
-                <option value="entrenamiento">Entrenamiento</option>
-                <option value="nutricion">Nutrición</option>
-                <option value="salud-mental">Salud Mental</option>
-                <option value="integral">Integral (Cuerpo + Mente)</option>
+                <option value="bajar-peso">Bajar de peso</option>
+                <option value="ganar-masa">Ganar masa muscular</option>
+                <option value="salud-mental">Mejorar salud mental</option>
+                <option value="nutricion">Mejorar alimentación</option>
             </select>
 
-            <label>Contacto (WhatsApp)</label>
+            <label>Contacto (WhatsApp):</label>
             <input type="text" name="contacto" required>
 
-            <button type="submit" class="btn-primary full">Enviar</button>
-        </form>
-    </section>
-
-    <!-- FORMULARIO PROFESIONALES -->
-    <section id="profesionales-form" class="form-section">
-        <h2 class="title">Formulario para Profesionales</h2>
-
-        <form name="profesionalForm" method="POST" data-netlify="true">
-            <label>Nombre</label>
-            <input type="text" name="nombre" required>
-
-            <label>Especialidad</label>
-            <select name="especialidad">
-                <option value="entrenador">Entrenador Personal</option>
-                <option value="nutricionista">Nutricionista</option>
-                <option value="psicologo">Psicólogo / Coach Mental</option>
-            </select>
-
-            <label>País</label>
-            <input type="text" name="pais" required>
-
-            <label>Años de experiencia</label>
-            <input type="number" name="experiencia" required>
-
-            <label>Contacto (WhatsApp)</label>
-            <input type="text" name="contacto" required>
-
-            <button type="submit" class="btn-primary full">Enviar</button>
+            <button type="submit" class="btn-primary full-btn">Enviar Datos</button>
         </form>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>VITALE © 2025 — Bienestar Integral</p>
+        <p>© 2025 ProHealth Marketplace - Todos los derechos reservados</p>
     </footer>
 
 </body>
+
 </html>
