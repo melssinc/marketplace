@@ -1,131 +1,315 @@
-/* =========================================================
-   ESTILOS GENERALES
-   ========================================================= */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #222;
+/* ----------- RESETEO ----------- */
+* {
+    box-sizing: border-box;
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #050509;
+    color: #f5f5f5;
+}
+
+/* ----------- HEADER ----------- */
+
 .header {
-    background: #ffffff;
-    padding: 16px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 18px 8%;
+    background: #050509;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {
+    font-weight: 700;
     font-size: 22px;
-    font-weight: bold;
-    color: #005fcc;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .nav a {
-    margin-left: 20px;
+    margin-left: 18px;
+    color: #f5f5f5;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.85;
 }
 
 .nav a:hover {
-    color: #005fcc;
+    opacity: 1;
+    text-decoration: underline;
 }
 
-/* =========================================================
-   SECCIONES GENERALES
-   ========================================================= */
-.section {
-    padding: 50px 20px;
-    text-align: center;
+/* ----------- HERO ----------- */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 8%;
+    align-items: center;
+    gap: 40px;
+    background: radial-gradient(circle at top left, #202046, #050509 50%);
 }
 
-.title {
-    font-size: 28px;
-    margin-bottom: 10px;
+.hero-text {
+    flex: 1 1 320px;
+    max-width: 520px;
 }
 
-.subtitle {
-    font-size: 16px;
-    color: #555;
+.hero-text h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
 }
 
-/* =========================================================
-   BOTONES
-   ========================================================= */
-.btn-primary {
-    background: #005fcc;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+.hero-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-small {
+    margin-top: 14px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.hero-visual {
+    flex: 1 1 320px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagen hero optimizada */
+.hero-img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 14px;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.6);
+    object-fit: cover;
+}
+
+/* ----------- BOTONES ----------- */
+
+.btn {
     display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #0A84FF;
+    color: white;
+    border-color: #0A84FF;
 }
 
 .btn-primary:hover {
-    background: #0048a1;
+    background: #006be6;
 }
 
-.btn-primary.full {
-    width: 80%;
-    margin: 15px auto 0 auto;
-    display: block;
+.btn-outline {
+    background: transparent;
+    color: #f5f5f5;
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
-/* =========================================================
-   GRID DE PROFESIONALES
-   ========================================================= */
-.prof-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+.btn-outline:hover {
+    border-color: #ffffff;
 }
 
-.prof-card {
-    background: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.prof-img {
+.btn-full {
     width: 100%;
-    height: 180px;
-    background-size: cover;
-    background-position: center;
-}
-
-.prof-name {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 12px;
-}
-
-.prof-specialty,
-.prof-exp {
-    font-size: 14px;
-    color: #555;
-}
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-.footer {
-    background: #005fcc;
-    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+}
+
+/* ----------- SECCIONES ----------- */
+
+.section {
+    padding: 50px 8%;
+    background: #050509;
+}
+
+.section-alt {
+    background: #0b0b12;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.section-sub {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+    max-width: 540px;
+    margin: 0 auto 28px auto;
+}
+
+/* ----------- CÓMO FUNCIONA ----------- */
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.step {
+    flex: 1 1 220px;
+    max-width: 280px;
+    background: #0b0b12;
+    border-radius: 14px;
+    padding: 18px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.step-number {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.step h3 {
+    font-size: 15px;
+    margin: 0 0 6px 0;
+}
+
+.step p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ----------- CATEGORÍAS (IMÁGENES OPTIMIZADAS) ----------- */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.card {
+    flex: 1 1 220px;
+    max-width: 280px;
+    background: #050509;
+    border-radius: 14px;
+    padding: 18px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Imagen de categoría optimizada */
+.cat-img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+}
+
+.card p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ----------- FORMULARIOS (VERSIÓN ARREGLADA Y OPTIMIZADA) ----------- */
+
+.form-box {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #0b0b12;
+    border-radius: 16px;
+    padding: 25px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.form-box label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    background: #14141f;
+    border-radius: 10px;
+    border: 1px solid #262638;
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.form-box textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    outline: none;
+    border-color: #0A84FF;
+    background: #1b1b29;
+}
+
+/* ----------- FOOTER ----------- */
+
+.footer {
+    text-align: center;
+    padding: 16px 8%;
+    font-size: 12px;
+    opacity: 0.6;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #050509;
+}
+
+/* ----------- RESPONSIVE ----------- */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
 }
