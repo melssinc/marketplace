@@ -313,3 +313,15 @@ body {
         order: -1;
     }
 }
+
+/* Ajuste de imágenes en tarjetas de profesionales */
+.card img,
+.card-image img,
+img {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
