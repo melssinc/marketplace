@@ -384,3 +384,137 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+[16:31, 18/12/2025] Melvin Carrero: /* ===============================
+   PROFESIONALES – GRID 3x (PC)
+   ============================== */
+
+.section.profesionales{
+  padding: 60px 8%;
+  width: 100%;
+}
+
+.section.profesionales h2{
+  margin: 50px 0 25px;
+  font-size: 24px;
+}
+
+/* GRID */
+.section.profesionales .profesionales-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 24px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+/* CARD */
+.section.profesionales .profesional-card{
+  background: #0b0b12;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEN */
+.section.profesionales .profesional-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXTO */
+.section.profesionales .profesional-text{
+  padding: 18px;
+}
+
+.section.profesionales .profesional-text h3{
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.section.profesionales .profesional-text p{
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .section.profesionales .profesionales-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px){
+  .section.profesionales .profesionales-grid{
+    grid-template-columns: 1fr;
+  }
+}
+[16:37, 18/12/2025] Melvin Carrero: /* ===============================
+   FIX DEFINITIVO PROFESIONALES
+   =============================== */
+
+.section.profesionales {
+  max-width: 100% !important;
+  padding: 60px 8%;
+}
+
+/* GRID 3 EN 3 */
+.section.profesionales .profesionales-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+/* CARD */
+.section.profesionales .profesional-card {
+  background: #0b0b12;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* IMAGEN */
+.section.profesionales .profesional-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXTO */
+.section.profesionales .profesional-text {
+  padding: 18px;
+}
+
+.section.profesionales .profesional-text h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.section.profesionales .profesional-text p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .section.profesionales .profesionales-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .section.profesionales .profesionales-grid {
+    grid-template-columns: 1fr;
+  }
+}
