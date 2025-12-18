@@ -18,6 +18,8 @@
             <a href="#clientes">Soy cliente</a>
             <a href="#profesionales">Soy profesional</a>
             <a href="profesionales.html">Ver profesionales</a>
+            <!-- NUEVO: LINK A PAGOS -->
+            <a href="pago.html">Pagar</a>
         </nav>
     </header>
 
@@ -31,10 +33,12 @@
                     Vitale te conecta con entrenadores personales, nutricionistas y psicólogos
                     para transformar tu salud física y mental desde cualquier lugar.
                 </p>
+
                 <div class="hero-buttons">
-                    <a href="#clientes" class="btn btn-primary">Quiero un profesional</a>
-                    <a href="#profesionales" class="btn btn-outline">Ofrecer mis servicios</a>
+                    <a href="pago.html" class="btn btn-primary">Pagar y conectar</a>
+                    <a href="profesionales.html" class="btn btn-outline">Ver profesionales</a>
                 </div>
+
                 <p class="hero-small">
                     Orientado a personas reales de Latinoamérica que buscan resultados, no excusas.
                 </p>
@@ -106,31 +110,27 @@
                 Completa tus datos para que te conectemos con el profesional adecuado.
             </p>
 
-            <form class="form-box" name="clienteForm" method="POST">
+            <form class="form-box">
                 <label>Nombre completo</label>
-                <input type="text" name="nombre" required>
+                <input type="text" required>
 
                 <label>País</label>
-                <input type="text" name="pais" required>
+                <input type="text" required>
 
                 <label>¿Qué estás buscando?</label>
-                <select name="objetivo" required>
+                <select required>
                     <option value="">Selecciona una opción</option>
-                    <option value="bajar-peso">Bajar de peso / grasa</option>
-                    <option value="ganar-masa">Ganar masa muscular</option>
-                    <option value="rendimiento">Rendimiento deportivo</option>
-                    <option value="salud-general">Salud general / energía</option>
-                    <option value="salud-mental">Salud mental / estrés / ansiedad</option>
-                    <option value="mixto">Mezcla de todo (cuerpo + mente)</option>
+                    <option>Bajar de peso</option>
+                    <option>Ganar masa muscular</option>
+                    <option>Salud mental</option>
                 </select>
 
-                <label>Cuéntanos brevemente tu situación</label>
-                <textarea name="descripcion" rows="4" required></textarea>
-
                 <label>WhatsApp / contacto</label>
-                <input type="text" name="contacto" required>
+                <input type="text" required>
 
-                <button type="submit" class="btn btn-primary btn-full">Enviar y solicitar profesional</button>
+                <button type="button" class="btn btn-primary btn-full">
+                    Continuar al pago
+                </button>
             </form>
         </section>
 
@@ -138,34 +138,22 @@
         <section id="profesionales" class="section section-alt">
             <h2>Formulario para profesionales</h2>
             <p class="section-sub">
-                Si eres entrenador, nutricionista o psicólogo y quieres sumar clientes, completa este formulario.
+                Si eres profesional y quieres sumar clientes, completa este formulario.
             </p>
 
-            <form class="form-box" name="profesionalForm" method="POST">
+            <form class="form-box">
                 <label>Nombre completo</label>
-                <input type="text" name="nombre" required>
+                <input type="text" required>
 
-                <label>País</label>
-                <input type="text" name="pais" required>
-
-                <label>Especialidad principal</label>
-                <select name="especialidad" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="entrenador">Entrenador personal</option>
-                    <option value="nutricionista">Nutricionista</option>
-                    <option value="psicologo">Psicólogo / Coach</option>
-                </select>
-
-                <label>Experiencia (años)</label>
-                <input type="number" name="experiencia" min="0" required>
-
-                <label>Servicios que ofreces</label>
-                <textarea name="servicios" rows="3" required></textarea>
+                <label>Especialidad</label>
+                <input type="text" required>
 
                 <label>WhatsApp / contacto</label>
-                <input type="text" name="contacto" required>
+                <input type="text" required>
 
-                <button type="submit" class="btn btn-outline btn-full">Registrarme como profesional</button>
+                <button type="submit" class="btn btn-outline btn-full">
+                    Registrarme como profesional
+                </button>
             </form>
         </section>
 
@@ -178,4 +166,5 @@
 
 </body>
 </html>
+
 
