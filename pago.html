@@ -11,33 +11,37 @@
 
 <header class="header">
   <div class="logo">Vitale</div>
-  <nav class="nav">
-    <a href="index.html">Inicio</a>
-    <a href="profesionales.html">Profesionales</a>
-  </nav>
 </header>
 
-<section class="section">
-  <h1 id="titulo-pago">Acceso a profesional</h1>
+<section class="section section-alt">
 
-  <p id="descripcion-pago" class="section-sub">
-    Selecciona continuar para acceder al contacto del profesional.
-  </p>
+  <div class="form-box" style="text-align:center">
 
-  <div class="form-box">
-    <p style="margin-bottom:16px;">
-      Al continuar podrás conectar directamente con el profesional seleccionado.
-      El acceso es inmediato tras el pago.
+    <h2 id="titulo">Acceso profesional</h2>
+
+    <p id="descripcion" style="margin-bottom:20px; opacity:0.85">
+      Conecta directamente con un profesional verificado en Vitale.
     </p>
 
-    <a href="https://mpago.la/2MHGKeP" class="btn btn-primary btn-full">
-      Pagar y acceder
+    <div style="margin: 24px 0; font-size:22px; font-weight:700;">
+      $5.000 CLP
+    </div>
+
+    <a
+      href="https://mpago.la/2MHGKeP"
+      target="_blank"
+      class="btn btn-primary btn-full"
+    >
+      Pagar y ver contacto
     </a>
 
-    <p style="margin-top:14px; font-size:12px; opacity:0.7;">
-      Pago seguro procesado por Mercado Pago.
+    <p style="font-size:12px; opacity:0.6; margin-top:14px">
+      Pago único · Sin suscripción · Acceso inmediato<br>
+      Pago seguro procesado por Mercado Pago
     </p>
+
   </div>
+
 </section>
 
 <footer class="footer">
@@ -48,19 +52,19 @@
   const params = new URLSearchParams(window.location.search);
   const tipo = params.get("tipo");
 
-  const titulo = document.getElementById("titulo-pago");
-  const descripcion = document.getElementById("descripcion-pago");
+  const titulo = document.getElementById("titulo");
+  const descripcion = document.getElementById("descripcion");
 
   if (tipo === "entrenador") {
     titulo.innerText = "Acceso a Entrenador Personal";
     descripcion.innerText =
-      "Conecta con un entrenador certificado y recibe asesoría personalizada según tu objetivo físico.";
+      "Conecta directamente con un entrenador profesional para mejorar tu rendimiento físico.";
   }
 
   if (tipo === "nutricionista") {
     titulo.innerText = "Acceso a Nutricionista";
     descripcion.innerText =
-      "Obtén orientación nutricional adaptada a tu cuerpo, hábitos y contexto.";
+      "Recibe orientación nutricional personalizada adaptada a tu estilo de vida.";
   }
 
   if (tipo === "psicologo") {
