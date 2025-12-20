@@ -82,3 +82,21 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+/* === FIX FINAL DE CENTRADO Y TAMAÑO === */
+.profesionales {
+  text-align: center;
+}
+
+.profesionales-grid {
+  justify-items: center; /* centra las cards dentro del grid */
+}
+
+.profesional-card {
+  max-width: 300px; /* hace que las cards sean más pequeñas */
+}
+
+.profesional-card img {
+  height: 150px; /* reduce la altura de las imágenes */
+  object-fit: cover;
+}
