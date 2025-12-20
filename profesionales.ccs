@@ -1,61 +1,94 @@
-/* ===== MARKETPLACE AISLADO ===== */
-
-.marketplace {
-  padding: 60px 8%;
+/* ===== RESET SOLO PARA ESTA PÁGINA ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.marketplace-title {
+body {
+  background: #050509;
+  color: #f5f5f5;
+  font-family: system-ui, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.mp-header {
+  padding: 40px 0;
   text-align: center;
-  margin-bottom: 40px;
+}
+
+.mp-header h1 {
   font-size: 26px;
 }
 
-/* GRID 3x3 */
-.marketplace-grid {
+/* ===== CONTENEDOR ===== */
+.mp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* ===== GRID 3x3 REAL ===== */
+.mp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: center;
 }
 
-/* CARD */
-.marketplace-card {
+/* ===== CARD ===== */
+.mp-card {
   background: #0b0b12;
   border-radius: 16px;
-  overflow: hidden;
   border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+  text-align: left;
 }
 
-/* IMAGEN */
-.marketplace-card img {
+/* ===== CONTENEDOR DE IMAGEN (CLAVE) ===== */
+.mp-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 180px;        /* 🔒 ALTURA FIJA */
+  overflow: hidden;
+}
+
+/* ===== IMAGEN CONTROLADA ===== */
+.mp-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* 🔒 NO SE DEFORMA */
   display: block;
 }
 
-/* TEXTO */
-.marketplace-card h3 {
-  margin: 14px 16px 6px;
+/* ===== TEXTO ===== */
+.mp-card h3 {
   font-size: 16px;
+  margin: 14px 16px 6px;
 }
 
-.marketplace-card p {
-  margin: 0 16px 16px;
+.mp-card p {
   font-size: 14px;
   opacity: 0.8;
+  margin: 0 16px 16px;
 }
 
-/* RESPONSIVE */
+/* ===== FOOTER ===== */
+.mp-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-  .marketplace-grid {
+  .mp-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .marketplace-grid {
+  .mp-grid {
     grid-template-columns: 1fr;
   }
 }
