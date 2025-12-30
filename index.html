@@ -5,166 +5,467 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitale - Conexión con Profesionales de Bienestar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- HEADER MEJORADO -->
     <header class="header">
         <div class="logo">Vitale</div>
         <nav class="nav">
             <a href="#como-funciona">Cómo funciona</a>
             <a href="#categorias">Categorías</a>
-            <a href="#clientes">Soy cliente</a>
-            <a href="#profesionales">Soy profesional</a>
-            <a href="profesionales.html">Ver profesionales</a>
-            <!-- NUEVO: LINK A PAGOS -->
-            <a href="pago.html">Pagar</a>
+            <a href="#profesionales-destacados">Profesionales</a>
+            <a href="#testimonios">Experiencias</a>
+            <a href="#clientes" class="nav-cta">Encontrar Profesional</a>
         </nav>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
     <main>
 
-        <!-- HERO -->
+        <!-- HERO MEJORADO -->
         <section id="hero" class="hero">
             <div class="hero-text">
-                <h1>Conectamos tu cuerpo y mente con profesionales confiables.</h1>
+                <h1>Transforma tu bienestar con un profesional a tu medida</h1>
                 <p>
-                    Vitale te conecta con entrenadores personales, nutricionistas y psicólogos
-                    para transformar tu salud física y mental desde cualquier lugar.
+                    Vitale conecta tu cuerpo y mente con <strong>entrenadores, nutricionistas y psicólogos verificados</strong> de Latinoamérica. Resultados reales, desde cualquier lugar.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="pago.html" class="btn btn-primary">Pagar y conectar</a>
-                    <a href="profesionales.html" class="btn btn-outline">Ver profesionales</a>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Profesionales</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3,000+</span>
+                        <span class="stat-label">Sesiones</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">Evaluación</span>
+                    </div>
                 </div>
 
-                <p class="hero-small">
-                    Orientado a personas reales de Latinoamérica que buscan resultados, no excusas.
-                </p>
+                <div class="hero-buttons">
+                    <a href="#clientes" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Encontrar mi profesional
+                    </a>
+                    <a href="#profesionales-destacados" class="btn btn-outline">
+                        <i class="fas fa-users"></i> Ver destacados
+                    </a>
+                </div>
             </div>
 
             <div class="hero-visual">
-                <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?auto=format&fit=crop&w=800&q=80" class="hero-img">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" 
+                     alt="Persona feliz después de una sesión de bienestar" 
+                     class="hero-img">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Profesionales verificados</span>
+                </div>
             </div>
         </section>
 
-        <!-- CÓMO FUNCIONA -->
+        <!-- CÓMO FUNCIONA MEJORADO -->
         <section id="como-funciona" class="section">
-            <h2>Cómo funciona Vitale</h2>
-            <p class="section-sub">
-                Un proceso simple para que hables con el profesional correcto sin perder tiempo.
-            </p>
+            <div class="section-header">
+                <h2>Tu camino en 3 pasos simples</h2>
+                <p class="section-sub">
+                    Diseñado para personas reales que buscan resultados, no excusas.
+                </p>
+            </div>
 
             <div class="steps">
                 <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
                     <div class="step-number">1</div>
-                    <h3>Cuéntanos tu objetivo</h3>
-                    <p>Nos dices si tu prioridad es físico, alimentación, mente o una mezcla de todo.</p>
+                    <h3>Define tu objetivo</h3>
+                    <p>Cuéntanos si buscas cambio físico, alimentación saludable, bienestar mental o combinación.</p>
                 </div>
                 <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
                     <div class="step-number">2</div>
-                    <h3>Te sugerimos el especialista</h3>
-                    <p>Buscamos dentro de nuestra red a la persona que mejor encaje contigo y tu realidad.</p>
+                    <h3>Te presentamos opciones</h3>
+                    <p>Nuestro sistema sugiere 2-3 profesionales que encajan con tu objetivo, ubicación y presupuesto.</p>
                 </div>
                 <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
                     <div class="step-number">3</div>
-                    <h3>Conexión directa</h3>
-                    <p>Hablas por WhatsApp o videollamada con el profesional y comienzan a trabajar.</p>
+                    <h3>Conexión directa y segura</h3>
+                    <p>Agendas y pagas tu primera sesión directamente en la plataforma. Sin intermediarios.</p>
                 </div>
             </div>
         </section>
 
-        <!-- CATEGORÍAS -->
+        <!-- TESTIMONIOS NUEVOS -->
+        <section id="testimonios" class="section section-alt">
+            <div class="section-header">
+                <h2>Historias reales de transformación</h2>
+                <p class="section-sub">
+                    Personas como tú están cambiando su vida con Vitale.
+                </p>
+            </div>
+
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=150&q=80" 
+                             alt="Ana" class="testimonio-avatar">
+                        <div>
+                            <h4>Ana G.</h4>
+                            <span class="testimonio-location">Ciudad de México</span>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">
+                        "Mi psicóloga en Vitale me entendió desde el primer día. Después de 3 meses, mi manejo de ansiedad ha mejorado un 90%. ¡Invaluable!"
+                    </p>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" 
+                             alt="Carlos" class="testimonio-avatar">
+                        <div>
+                            <h4>Carlos R.</h4>
+                            <span class="testimonio-location">Medellín, Colombia</span>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">
+                        "Mi entrenador adaptó todo a mi lesión de rodilla. Bajé 12kg y recuperé movilidad. El proceso de pago fue súper seguro y fácil."
+                    </p>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                             alt="María" class="testimonio-avatar">
+                        <div>
+                            <h4>María L.</h4>
+                            <span class="testimonio-location">Santiago, Chile</span>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">
+                        "La nutricionista me creó un plan con alimentos de mi país. He logrado hábitos que mantengo hace 6 meses. ¡100% recomendado!"
+                    </p>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFESIONALES DESTACADOS NUEVOS -->
+        <section id="profesionales-destacados" class="section">
+            <div class="section-header">
+                <h2>Profesionales destacados de nuestra red</h2>
+                <p class="section-sub">
+                    Expertos verificados que han ayudado a cientos de clientes.
+                </p>
+            </div>
+
+            <div class="profesionales-grid">
+                <div class="profesional-card">
+                    <div class="profesional-badge">Más solicitado</div>
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" 
+                         alt="Dra. Valeria Soto" class="profesional-avatar">
+                    <div class="profesional-info">
+                        <h3>Dra. Valeria Soto</h3>
+                        <p class="profesional-especialidad">
+                            <i class="fas fa-brain"></i> Psicóloga Clínica
+                        </p>
+                        <p class="profesional-desc">
+                            Especialista en ansiedad y estrés laboral. Más de 10 años de experiencia. Sesiones en español e inglés.
+                        </p>
+                        <div class="profesional-stats">
+                            <span><i class="fas fa-user-check"></i> 240 sesiones</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                    <a href="profesionales.html#valeria" class="btn btn-outline btn-small">
+                        Ver perfil completo
+                    </a>
+                </div>
+
+                <div class="profesional-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=400&q=80" 
+                         alt="Carlos Mendoza" class="profesional-avatar">
+                    <div class="profesional-info">
+                        <h3>Carlos Mendoza</h3>
+                        <p class="profesional-especialidad">
+                            <i class="fas fa-dumbbell"></i> Entrenador Personal
+                        </p>
+                        <p class="profesional-desc">
+                            Especializado en fuerza para adultos mayores y rehabilitación. Enfoque en movilidad segura y progresiva.
+                        </p>
+                        <div class="profesional-stats">
+                            <span><i class="fas fa-user-check"></i> 180 sesiones</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                    <a href="profesionales.html#carlos" class="btn btn-outline btn-small">
+                        Ver perfil completo
+                    </a>
+                </div>
+
+                <div class="profesional-card">
+                    <div class="profesional-badge">Nuevo en Vitale</div>
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w-400&q=80" 
+                         alt="Lic. Sofía Ramírez" class="profesional-avatar">
+                    <div class="profesional-info">
+                        <h3>Lic. Sofía Ramírez</h3>
+                        <p class="profesional-especialidad">
+                            <i class="fas fa-apple-alt"></i> Nutricionista Deportiva
+                        </p>
+                        <p class="profesional-desc">
+                            Planes para atletas y personas activas. Especialista en alimentación basada en plantas y rendimiento.
+                        </p>
+                        <div class="profesional-stats">
+                            <span><i class="fas fa-user-check"></i> 95 sesiones</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                    <a href="profesionales.html#sofia" class="btn btn-outline btn-small">
+                        Ver perfil completo
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="profesionales.html" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Explorar todos los profesionales
+                </a>
+            </div>
+        </section>
+
+        <!-- CATEGORÍAS MEJORADAS -->
         <section id="categorias" class="section section-alt">
-            <h2>Categorías de profesionales</h2>
-            <p class="section-sub">
-                Vitale integra cuerpo y mente en un solo lugar.
-            </p>
+            <div class="section-header">
+                <h2>Encuentra el especialista que necesitas</h2>
+                <p class="section-sub">
+                    Vitale integra cuerpo y mente en un solo lugar.
+                </p>
+            </div>
 
             <div class="cards">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=600&q=60" class="cat-img">
+                <div class="card card-hover">
+                    <div class="card-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
                     <h3>Entrenadores personales</h3>
-                    <p>Fuerza, recomposición corporal, rendimiento, fútbol y entrenamiento personal.</p>
+                    <p>Fuerza, recomposición corporal, rendimiento deportivo, entrenamiento funcional y personalizado.</p>
+                    <a href="#clientes" class="card-link">Buscar entrenador →</a>
                 </div>
 
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=60" class="cat-img">
+                <div class="card card-hover">
+                    <div class="card-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
                     <h3>Nutricionistas</h3>
-                    <p>Planes realistas adaptados a tu país, horarios y nivel económico.</p>
+                    <p>Planes realistas adaptados a tu país, cultura alimentaria, horarios y nivel económico.</p>
+                    <a href="#clientes" class="card-link">Buscar nutricionista →</a>
                 </div>
 
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=60" class="cat-img">
+                <div class="card card-hover">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
                     <h3>Psicólogos & coaches</h3>
-                    <p>Salud mental, claridad, manejo de estrés, disciplina y decisiones.</p>
+                    <p>Salud mental, claridad emocional, manejo de estrés, desarrollo personal y toma de decisiones.</p>
+                    <a href="#clientes" class="card-link">Buscar psicólogo →</a>
                 </div>
             </div>
         </section>
 
-        <!-- FORMULARIO CLIENTES -->
-        <section id="clientes" class="section">
-            <h2>Formulario para clientes</h2>
-            <p class="section-sub">
-                Completa tus datos para que te conectemos con el profesional adecuado.
-            </p>
+        <!-- FAQ NUEVO -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Preguntas frecuentes</h2>
+                <p class="section-sub">
+                    Respuestas claras para que empieces con confianza.
+                </p>
+            </div>
 
-            <form class="form-box">
-                <label>Nombre completo</label>
-                <input type="text" required>
-
-                <label>País</label>
-                <input type="text" required>
-
-                <label>¿Qué estás buscando?</label>
-                <select required>
-                    <option value="">Selecciona una opción</option>
-                    <option>Bajar de peso</option>
-                    <option>Ganar masa muscular</option>
-                    <option>Salud mental</option>
-                </select>
-
-                <label>WhatsApp / contacto</label>
-                <input type="text" required>
-
-                <button type="button" class="btn btn-primary btn-full">
-                    Continuar al pago
-                </button>
-            </form>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="far fa-credit-card"></i> ¿Cómo funcionan los pagos?</h3>
+                    <p>Pagas directamente en la plataforma con tarjeta o métodos locales. Tu pago se retiene de forma segura y se libera al profesional 24h después de tu sesión.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-user-check"></i> ¿Cómo verifican a los profesionales?</h3>
+                    <p>Revisamos credenciales, experiencia y realizamos entrevistas. Solo el 30% de los solicitantes pasa nuestro proceso de verificación.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-video"></i> ¿Las sesiones son presenciales o virtuales?</h3>
+                    <p>Ambas. Puedes filtrar por modalidad. El 80% de nuestras sesiones son virtuales, conectando a toda Latinoamérica.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-exchange-alt"></i> ¿Puedo cambiar de profesional?</h3>
+                    <p>Sí, sin costo adicional. Si no conectas con tu primer profesional, te ayudamos a encontrar otro en 24 horas.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- FORMULARIO PROFESIONALES -->
-        <section id="profesionales" class="section section-alt">
-            <h2>Formulario para profesionales</h2>
-            <p class="section-sub">
-                Si eres profesional y quieres sumar clientes, completa este formulario.
-            </p>
+        <!-- FORMULARIO CLIENTES MEJORADO -->
+        <section id="clientes" class="section">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Encuentra tu profesional ideal</h2>
+                    <p class="section-sub">
+                        Completa el formulario y te presentaremos opciones personalizadas en menos de 24h.
+                    </p>
+                </div>
 
-            <form class="form-box">
-                <label>Nombre completo</label>
-                <input type="text" required>
+                <form class="form-box" id="clienteForm">
+                    <div class="form-group">
+                        <label><i class="far fa-user"></i> Nombre completo</label>
+                        <input type="text" placeholder="Ej: Ana García" required>
+                    </div>
 
-                <label>Especialidad</label>
-                <input type="text" required>
+                    <div class="form-group">
+                        <label><i class="fas fa-globe-americas"></i> País</label>
+                        <select required>
+                            <option value="">Selecciona tu país</option>
+                            <option>México</option>
+                            <option>Colombia</option>
+                            <option>Argentina</option>
+                            <option>Chile</option>
+                            <option>Perú</option>
+                        </select>
+                    </div>
 
-                <label>WhatsApp / contacto</label>
-                <input type="text" required>
+                    <div class="form-group">
+                        <label><i class="fas fa-bullseye"></i> ¿Qué estás buscando?</label>
+                        <select required>
+                            <option value="">Selecciona tu objetivo principal</option>
+                            <option>Bajar de peso / Recomp corporal</option>
+                            <option>Ganar masa muscular / Fuerza</option>
+                            <option>Manejo de ansiedad / Estrés</option>
+                            <option>Nutrición para deportistas</option>
+                        </select>
+                    </div>
 
-                <button type="submit" class="btn btn-outline btn-full">
-                    Registrarme como profesional
-                </button>
-            </form>
+                    <div class="form-group">
+                        <label><i class="fas fa-comment-alt"></i> WhatsApp para contacto</label>
+                        <input type="text" placeholder="+52 55 1234 5678" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="far fa-clock"></i> Presupuesto mensual aproximado</label>
+                        <select>
+                            <option value="">Selecciona un rango</option>
+                            <option>Menos de $100 USD</option>
+                            <option>$100 - $200 USD</option>
+                            <option>$200 - $300 USD</option>
+                            <option>Más de $300 USD</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-full">
+                        <i class="fas fa-search"></i> Buscar profesionales para mí
+                    </button>
+                    
+                    <p class="form-note">
+                        <i class="fas fa-lock"></i> Tus datos están seguros. No compartimos tu información sin permiso.
+                    </p>
+                </form>
+            </div>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER MEJORADO -->
     <footer class="footer">
-        <p>Vitale © 2025 – Plataforma de conexión con profesionales de bienestar.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">Vitale</div>
+                <p>Conectando a Latinoamérica con profesionales de bienestar verificados desde 2024.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Para Clientes</h4>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#profesionales-destacados">Profesionales</a>
+                <a href="#testimonios">Testimonios</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Para Profesionales</h4>
+                <a href="#profesionales">Únete a Vitale</a>
+                <a href="#">Beneficios</a>
+                <a href="#">Requisitos</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Términos de servicio</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Vitale © 2025 – Plataforma de conexión con profesionales de bienestar. Hecho con ❤️ para Latinoamérica.</p>
+            <div class="footer-payment">
+                <span>Aceptamos:</span>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fas fa-university"></i>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Menú móvil simple
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('nav-open');
+        });
+
+        // Formulario cliente
+        document.getElementById('clienteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias! Te contactaremos en menos de 24 horas con profesionales que encajan con tu perfil.');
+            // Aquí luego iría la conexión a tu backend
+        });
+    </script>
 
 </body>
 </html>
+
 
 
