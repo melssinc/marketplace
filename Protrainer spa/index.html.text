@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>ProTrainer SPA - Entrenamiento Personal a Domicilio en Santiago</title>
+  <meta name="description" content="Entrenamiento personal a domicilio en Santiago. Entrenadores certificados, metodología probada, resultados garantizados. Agenda tu evaluación inicial.">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RE1EWTE3N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RE1EWTE3N9');
+  </script>
+  <!-- End Google Analytics -->
+  
+  <!-- Schema.org para SEO Local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ProTrainer SPA",
+    "description": "Entrenamiento personal a domicilio en Santiago con entrenadores certificados",
+    "image": "https://sage-unicorn-b69186.netlify.app/images/alumno1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santiago",
+      "addressRegion": "Región Metropolitana",
+      "addressCountry": "CL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-33.4489",
+      "longitude": "-70.6693"
+    },
+    "url": "https://sage-unicorn-b69186.netlify.app/",
+    "telephone": "+56952003561",
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 06:00-22:00, Sa 08:00-20:00",
+    "sameAs": [
+      "https://maps.app.goo.gl/5oheMEokS5nfuAst5"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "74",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Santiago"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Entrenamiento",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Evaluación Inicial de Valor"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Entrenamiento Personalizado"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="ProTrainer SPA - Entrenamiento Personal a Domicilio en Santiago">
+  <meta property="og:description" content="Equipo profesional de entrenadores certificados. Servicio a domicilio en todo Santiago.">
+  <meta property="og:image" content="https://sage-unicorn-b69186.netlify.app/images/alumno1.jpg">
+  <meta property="og:url" content="https://sage-unicorn-b69186.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ProTrainer SPA">
+  <meta property="og:locale" content="es_CL">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ProTrainer SPA - Entrenamiento Personal a Domicilio en Santiago">
+  <meta name="twitter:description" content="Entrenamiento personal a domicilio con profesionales certificados.">
+  <meta name="twitter:image" content="https://sage-unicorn-b69186.netlify.app/images/alumno1.jpg">
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Hoja de estilos EXTERNA -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://sage-unicorn-b69186.netlify.app/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLCVH7S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  <!-- Banner de Oferta -->
+  <div class="offer-banner">
+    <span>🎯 OFERTA DE LANZAMIENTO: Evaluación Inicial Incluida + Plan Personalizado</span>
+    <a href="https://wa.me/56952003561?text=¡Hola! Vi tu oferta de lanzamiento y quiero agendar mi Evaluación Inicial." class="offer-btn" target="_blank">¡Quiero Mi Cupo!</a>
+  </div>
+
+  <!-- Header -->
+  <header class="nav">
+    <div class="logo">
+      <span>ProTrainer SPA</span>
+    </div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#equipo-pro">Nuestro Equipo</a>
+      <a href="#alumnos">Resultados</a>
+      <a href="#video">Video</a>
+      <a href="#google-reviews">Reseñas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Transforma Tu Cuerpo Con Expertos</h1>
+      <p>Equipo profesional certificado con metodología de alto rendimiento. Más de 10 años de experiencia internacional aplicada a tus objetivos.</p>
+      
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <i class="fas fa-star"></i>
+          <span>5.0 ★ (74 reseñas Google)</span>
+        </div>
+        <div class="trust-badge">
+          <i class="fas fa-check-circle"></i>
+          <span>Evaluación Inicial Incluida</span>
+        </div>
+        <div class="trust-badge">
+          <i class="fas fa-home"></i>
+          <span>Servicio a Domicilio</span>
+        </div>
+      </div>
+      
+      <a class="btn-hero" href="https://wa.me/56952003561?text=¡Hola ProTrainer! Quiero Informacion. ¿Pueden ayudarme?" target="_blank">
+        <i class="fab fa-whatsapp"></i> Hablar Con Un Entrenador
+      </a>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="servicios" class="section dark">
+    <h2>Nuestro Servicio Profesional</h2>
+    <p class="section-subtitle">Metodología probada con resultados medibles</p>
+    
+    <div class="services">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <h3>Entrenamiento Personalizado</h3>
+        </div>
+        <p>Programas exclusivos según tus objetivos, diseñados por nuestro equipo de especialistas.</p>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h3>Planificación Física</h3>
+        </div>
+        <p>Rutinas estructuradas con periodización deportiva profesional para maximizar resultados.</p>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Apoyo Integral</h3>
+        </div>
+        <p>Seguimiento constante, ajustes técnicos y motivación profesional permanente.</p>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Evaluación Inicial de Valor</h3>
+        </div>
+        <p>Análisis completo de tu condición física para establecer metas realistas y medibles.</p>
+      </div>
+    </div>
+    
+    <div class="section-cta">
+      <a href="https://wa.me/56952003561?text=¡Hola! Estoy en la sección de Servicios y quiero un PLAN PERSONALIZADO. ¿Podemos coordinar?" class="btn-whatsapp-cta" target="_blank">
+        <i class="fab fa-whatsapp"></i> ¡Sí, Quiero Mi Plan Personalizado!
+      </a>
+      <p class="cta-note">Nuestro coordinador te asignará al especialista ideal para tus objetivos</p>
+    </div>
+  </section>
+
+  <!-- Sección Equipo -->
+  <section id="equipo-pro" class="section light">
+    <div class="container">
+      <h2>Nuestro Equipo de Expertos</h2>
+      <p class="section-subtitle">Profesionales certificados con metodología corporativa probada</p>
+      
+      <div class="team-stats">
+        <div class="stat-card">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">74</span>
+          <span class="stat-label">Clientes Satisfechos</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Resultados Garantizados</span>
+        </div>
+      </div>
+      
+      <div class="team-wrapper">
+        <div class="team-photo-card">
+          <div class="profile-photo-container">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Equipo profesional de ProTrainer SPA" 
+                 class="profile-photo"
+                 loading="lazy"
+                 width="800"
+                 height="600">
+            <div class="photo-badge">Equipo Certificado</div>
+          </div>
+          
+          <div class="team-info">
+            <h3><i class="fas fa-building"></i> ProTrainer SPA</h3>
+            <p>Empresa líder en entrenamiento personal a domicilio en Santiago</p>
+            <div class="team-badge">
+              <i class="fas fa-users"></i> Equipo multidisciplinario de entrenadores
+            </div>
+            
+            <div class="team-credentials">
+              <h4><i class="fas fa-trophy"></i> Credenciales</h4>
+              <ul>
+                <li><i class="fas fa-certificate"></i> Metodología patentada</li>
+                <li><i class="fas fa-globe-americas"></i> Experiencia internacional</li>
+                <li><i class="fas fa-user-graduate"></i> Entrenadores certificados</li>
+                <li><i class="fas fa-shield-alt"></i> Garantía de resultados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-content">
+          <div class="team-intro">
+            <h3>Metodología Corporativa Probada</h3>
+            <p><strong>En ProTrainer SPA no trabajamos con individuos, trabajamos con equipos:</strong> Contamos con entrenadores profesionales cuidadosamente seleccionados y capacitados en nuestra metodología probada. Cada cliente es asignado al especialista más adecuado para sus objetivos específicos.</p>
+          </div>
+          
+          <div class="team-cta">
+            <h4><i class="fas fa-calendar-check"></i> ¿Listo para entrenar con profesionales?</h4>
+            <p>Te invitamos a una <strong>sesión de evaluación de valor</strong> donde analizamos tus objetivos y te presentamos al entrenador más adecuado de nuestro equipo.</p>
+            <div class="cta-buttons">
+              <a href="https://wa.me/56952003561?text=¡Hola! Quiero entrenar con profesionales. Necesito una EVALUACIÓN de valor para mis objetivos." class="btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Agenda Con Nuestro Coordinador
+              </a>
+              <a href="tel:+56952003561" class="btn-secondary">
+                <i class="fas fa-phone"></i> +56 9 5200 3561
+              </a>
+            </div>
+            <p class="cta-note"><i class="fas fa-info-circle"></i> Te asignaremos el especialista ideal según tu ubicación, objetivos y disponibilidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrusel de Resultados - NUEVO DISEÑO -->
+  <section id="alumnos" class="section">
+    <h2>Resultados Comprobados</h2>
+    <p class="section-subtitle">37 clientes transformados con nuestra metodología</p>
+    
+    <div class="carousel-moderno-container">
+      <button class="carousel-moderno-btn prev-btn" aria-label="Ver imágenes anteriores">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="carousel-moderno-track-container">
+        <div class="carousel-moderno-track" id="carouselTrack">
+          <!-- Las imágenes se generarán con JavaScript -->
+        </div>
+      </div>
+
+      <button class="carousel-moderno-btn next-btn" aria-label="Ver más imágenes">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    
+    <div class="carousel-moderno-dots" id="carouselDots"></div>
+    
+    <div class="section-cta">
+      <h3>¿Quieres ser nuestro próximo caso de éxito?</h3>
+      <a href="https://wa.me/56952003561?text=¡Hola! Quiero ser un caso de éxito de ProTrainer. ¿Cómo empezamos?" class="btn-whatsapp-cta" target="_blank">
+        <i class="fab fa-whatsapp"></i> ¡Quiero Transformar Mi Cuerpo!
+      </a>
+      <p class="cta-note">Evaluación Inicial Incluida + Plan personalizado</p>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="section dark">
+    <h2>Mira Cómo Trabajamos</h2>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/ouA0nEuFxIM?si=EwSvqtg3zPjoffZf"
+        title="Video de entrenamiento ProTrainer SPA"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section light">
+    <h2>Conéctate Con Nuestro Equipo</h2>
+    <p class="section-subtitle">Múltiples canales para atenderte profesionalmente</p>
+
+    <div class="contact-options">
+      <a href="https://wa.me/56952003561?text=¡Hola! Necesito contactar al equipo de ProTrainer para información." class="contact-option" target="_blank">
+        <div class="contact-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <div>
+          <strong>WhatsApp Prioritario</strong>
+          <small>Respuesta en menos de 15 minutos</small>
+        </div>
+      </a>
+      
+      <a href="tel:+56952003561" class="contact-option">
+        <div class="contact-icon phone">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div>
+          <strong>Llamada Directa</strong>
+          <small>+56 9 5200 3561</small>
+        </div>
+      </a>
+    </div>
+    
+    <div class="google-badge">
+      <div class="google-header">
+        <div class="google-icon">
+          <i class="fab fa-google"></i>
+        </div>
+        <div>
+          <h4>ProTrainer SPA en Google</h4>
+          <div class="rating">
+            ★★★★★
+            <span>5.0 (74 reseñas)</span>
+          </div>
+        </div>
+      </div>
+      <p>Calificación verificada por Google Business Profile</p>
+      <a href="https://maps.app.goo.gl/5oheMEokS5nfuAst5" target="_blank" class="google-button">
+        <i class="fab fa-google"></i> Ver Nuestro Perfil Corporativo
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="current-year">2024</span> ProTrainer SPA – Entrenamiento Personal a Domicilio en Santiago de Chile</p>
+    <p class="footer-contact">
+      <a href="tel:+56952003561"><i class="fas fa-phone"></i> +56 9 5200 3561</a> |
+      <a href="mailto:personalprotrainerspa@gmail.com"><i class="fas fa-envelope"></i> personalprotrainerspa@gmail.com</a>
+    </p>
+  </footer>
+
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/56952003561?text=¡Hola ProTrainer! Tengo una consulta sobre sus servicios." class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-text">¡Consulta Ahora!</span>
+  </a>
+
+  <!-- JavaScript Básico -->
+  <script>
+    // Actualizar año en el footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if(targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+  <!-- CARRUSEL MODERNO - Archivo externo -->
+  <script src="js/carrusel.js"></script>
+</body>
+</html>
