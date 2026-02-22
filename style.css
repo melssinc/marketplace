@@ -965,117 +965,133 @@ footer {
   z-index: 1;
 }
 
-/* ===== CORRECCIONES PARA CELULAR (MÓVIL) ===== */
+/* ===== SOLUCIÓN URGENTE PARA MÓVIL ===== */
 @media (max-width: 768px) {
-  /* Ajustar el Hero Section completo */
+  /* Forzar Hero Section a verse bien */
   .hero {
-    padding: 4rem 1rem !important;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    min-height: 100vh !important;
+    height: auto !important;
+    padding: 60px 15px 40px 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   
-  /* Reducir tamaño del texto principal */
+  .hero-overlay {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+    margin: 0 !important;
+  }
+  
+  /* Ajustar texto principal */
   .hero h1 {
-    font-size: 2rem !important;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 15px !important;
+    word-wrap: break-word !important;
   }
   
   .hero p {
-    font-size: 1rem !important;
-    padding: 0 0.5rem;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
   }
   
-  /* Arreglar los badges (estrellas, check, etc) */
+  /* Badges en columna */
   .trust-badges {
+    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap: 0.8rem !important;
-    margin: 1.5rem 0 !important;
+    gap: 10px !important;
+    margin: 20px 0 !important;
+    width: 100% !important;
   }
   
   .trust-badge {
-    width: 90% !important;
-    justify-content: center !important;
-    padding: 10px 15px !important;
-    font-size: 0.9rem !important;
-  }
-  
-  /* Botón de WhatsApp más pequeño y centrado */
-  .btn-hero {
-    padding: 0.9rem 1.5rem !important;
-    font-size: 1rem !important;
-    width: 90% !important;
+    width: 100% !important;
     max-width: 300px !important;
     margin: 0 auto !important;
+    padding: 12px 15px !important;
+    font-size: 14px !important;
+    justify-content: center !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+  
+  /* Botón hero */
+  .btn-hero {
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 10px auto !important;
+    padding: 14px 20px !important;
+    font-size: 16px !important;
+    white-space: normal !important;
+    text-align: center !important;
     display: flex !important;
+    align-items: center !important;
     justify-content: center !important;
   }
   
-  /* Ajustar el overlay del video */
-  .hero-overlay {
-    width: 100% !important;
-    padding: 1rem !important;
+  /* Header/Nav */
+  .nav {
+    padding: 10px !important;
+    flex-wrap: wrap !important;
   }
   
-  /* Ajustar el header (menú) en móvil */
-  .nav {
-    flex-direction: column !important;
-    padding: 0.8rem !important;
+  .logo span {
+    font-size: 20px !important;
   }
   
   .nav nav {
+    display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 0.8rem !important;
+    gap: 8px !important;
+    margin-top: 10px !important;
   }
   
   .nav nav a {
-    font-size: 0.9rem !important;
-    padding: 0.3rem 0.6rem !important;
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+    background: rgba(255,255,255,0.1) !important;
+    border-radius: 20px !important;
   }
   
-  /* Banner de oferta en móvil */
+  /* Banner de oferta */
   .offer-banner {
-    padding: 0.8rem !important;
-    font-size: 0.9rem !important;
-    line-height: 1.4 !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+    line-height: 1.3 !important;
   }
   
   .offer-btn {
-    display: block !important;
-    margin: 0.5rem auto 0 !important;
-    max-width: 200px !important;
-    font-size: 0.9rem !important;
-    padding: 0.5rem 1rem !important;
+    display: inline-block !important;
+    margin-top: 8px !important;
+    padding: 8px 16px !important;
+    font-size: 13px !important;
   }
   
-  /* Ajustar títulos generales */
-  h1 { font-size: 2rem !important; }
-  h2 { font-size: 1.6rem !important; }
-  h3 { font-size: 1.3rem !important; }
-  
-  /* Ajustar secciones */
-  .section {
-    padding: 3rem 1rem !important;
-  }
-  
-  /* WhatsApp flotante más compacto */
+  /* WhatsApp flotante */
   .whatsapp-float {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     bottom: 15px !important;
     right: 15px !important;
-    padding: 10px 18px !important;
-    font-size: 0.9rem !important;
   }
   
   .whatsapp-float .whatsapp-text {
-    display: none !important; /* Oculta el texto, deja solo el icono */
+    display: none !important;
   }
   
   .whatsapp-float i {
-    font-size: 1.5rem !important;
+    font-size: 24px !important;
     margin: 0 !important;
   }
 }
-
