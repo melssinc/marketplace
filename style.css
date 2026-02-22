@@ -964,3 +964,118 @@ footer {
   position: relative;
   z-index: 1;
 }
+
+/* ===== CORRECCIONES PARA CELULAR (MÓVIL) ===== */
+@media (max-width: 768px) {
+  /* Ajustar el Hero Section completo */
+  .hero {
+    padding: 4rem 1rem !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Reducir tamaño del texto principal */
+  .hero h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1rem !important;
+    padding: 0 0.5rem;
+  }
+  
+  /* Arreglar los badges (estrellas, check, etc) */
+  .trust-badges {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    margin: 1.5rem 0 !important;
+  }
+  
+  .trust-badge {
+    width: 90% !important;
+    justify-content: center !important;
+    padding: 10px 15px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Botón de WhatsApp más pequeño y centrado */
+  .btn-hero {
+    padding: 0.9rem 1.5rem !important;
+    font-size: 1rem !important;
+    width: 90% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  /* Ajustar el overlay del video */
+  .hero-overlay {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  
+  /* Ajustar el header (menú) en móvil */
+  .nav {
+    flex-direction: column !important;
+    padding: 0.8rem !important;
+  }
+  
+  .nav nav {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.8rem !important;
+  }
+  
+  .nav nav a {
+    font-size: 0.9rem !important;
+    padding: 0.3rem 0.6rem !important;
+  }
+  
+  /* Banner de oferta en móvil */
+  .offer-banner {
+    padding: 0.8rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .offer-btn {
+    display: block !important;
+    margin: 0.5rem auto 0 !important;
+    max-width: 200px !important;
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+  
+  /* Ajustar títulos generales */
+  h1 { font-size: 2rem !important; }
+  h2 { font-size: 1.6rem !important; }
+  h3 { font-size: 1.3rem !important; }
+  
+  /* Ajustar secciones */
+  .section {
+    padding: 3rem 1rem !important;
+  }
+  
+  /* WhatsApp flotante más compacto */
+  .whatsapp-float {
+    bottom: 15px !important;
+    right: 15px !important;
+    padding: 10px 18px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .whatsapp-float .whatsapp-text {
+    display: none !important; /* Oculta el texto, deja solo el icono */
+  }
+  
+  .whatsapp-float i {
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+  }
+}
+
