@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
   
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -110,6 +110,87 @@
   
   <!-- Hoja de estilos EXTERNA -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Estilos directos para el Hero (prioritarios) -->
+  <style>
+    /* ESTOS ESTILOS SON PRIORITARIOS PARA MÓVIL */
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 100vh !important;
+        height: auto !important;
+        padding: 80px 20px 50px 20px !important;
+        display: flex !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+      
+      .hero h1 {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+      }
+      
+      .hero p {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 25px !important;
+        max-width: 100% !important;
+      }
+      
+      .trust-badges {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        margin: 20px 0 30px 0 !important;
+        width: 100% !important;
+      }
+      
+      .trust-badge {
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        padding: 12px 20px !important;
+        font-size: 15px !important;
+        justify-content: center !important;
+        white-space: normal !important;
+      }
+      
+      .btn-hero {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 10px auto !important;
+        padding: 16px 25px !important;
+        font-size: 18px !important;
+        justify-content: center !important;
+      }
+      
+      .hero-overlay {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 28px !important;
+      }
+      
+      .hero p {
+        font-size: 15px !important;
+      }
+      
+      .trust-badge {
+        font-size: 14px !important;
+        padding: 10px 15px !important;
+      }
+      
+      .btn-hero {
+        font-size: 16px !important;
+        padding: 14px 20px !important;
+      }
+    }
+  </style>
   
   <!-- Favicon -->
   <link rel="icon" href="https://sage-unicorn-b69186.netlify.app/favicon.ico" type="image/x-icon">
