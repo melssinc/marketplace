@@ -965,4 +965,73 @@ footer {
   z-index: 1;
 }
 
+/* ===== GALERÍA ESTILO ELFSIGHT (gratuita e ilimitada) ===== */
+.elfsight-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.elfsight-gallery-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elfsight-gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.elfsight-gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.elfsight-gallery-caption {
+  padding: 15px;
+  text-align: center;
+}
+
+.elfsight-gallery-caption strong {
+  color: #e63946;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.elfsight-gallery-caption span {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: block;
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+  .elfsight-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .elfsight-gallery-item img {
+    height: 200px;
+  }
+  
+  .elfsight-gallery-caption {
+    padding: 12px;
+  }
+  
+  .elfsight-gallery-caption span {
+    font-size: 0.85rem;
+  }
+}
+
 
