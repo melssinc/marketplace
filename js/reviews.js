@@ -61,8 +61,38 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             stopSlider();
             const card = e.target.closest('.review-card-custom');
-            card.classList.toggle('expanded');
-            e.target.textContent = card.classList.contains('expanded') ? 'Leer menos' : 'Leer más';
+            abrirReviewModal(card);
         }
     });
+
+    function abrirReviewModal(card) {
+        let modal = document.getElementById('reviewModal');
+        
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'reviewModal';
+            modal.className = 'review-modal';
+            modal.innerHTML = `
+                <div class="review-modal-content">
+                    <span class="review-modal-close">&times;</span>
+                    <div id="reviewModalBody"></div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            modal.querySelector('.review-modal-close').onclick = () => modal.style.display = "none";
+            modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+        }
+
+        const body = document.getElementById('reviewModalBody');
+        const header = card.querySelector('.review-card-header').innerHTML;
+        const stars = card.querySelector('.review-stars-static').innerHTML;
+        const text = card.querySelector('.review-text-content').innerText;
+
+        body.innerHTML = `
+            <div class="review-card-header">${header}</div>
+            <div class="review-stars-static" style="margin: 15px 0">${stars}</div>
+            <div class="review-text-full">${text}</div>
+        `;
+        modal.style.display = "flex";
+    }
 });
