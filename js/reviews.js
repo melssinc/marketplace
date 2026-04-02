@@ -86,12 +86,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const body = document.getElementById('reviewModalBody');
         const header = card.querySelector('.review-card-header').innerHTML;
         const stars = card.querySelector('.review-stars-static').innerHTML;
-        const text = card.querySelector('.review-text-content').innerText;
+        const fullText = card.querySelector('.review-text-content').innerText;
 
         body.innerHTML = `
             <div class="review-card-header">${header}</div>
             <div class="review-stars-static" style="margin: 15px 0">${stars}</div>
-            <div class="review-text-full">${text}</div>
+            <div style="font-size: 1.1rem; line-height: 1.7; color: #ddd; white-space: pre-wrap;">${fullText}</div>
         `;
         modal.style.display = "flex";
     }
