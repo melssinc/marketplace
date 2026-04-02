@@ -282,6 +282,11 @@ p { margin-bottom: 1rem; }
 .card h3 {
   margin: 0;
   color: inherit;
+  font-size: 1.5rem; /* Un poco más pequeño para evitar desbordes */
+  flex: 1; /* Permite que el texto ocupe el espacio restante correctamente */
+  min-width: 0; /* Permite que el elemento flex se encoja si es necesario */
+  overflow-wrap: break-word; /* Rompe la palabra si es estrictamente necesario */
+  hyphens: auto; /* Añade guiones si corta la palabra (mejor para español) */
 }
 
 /* ===== CTAs ===== */
