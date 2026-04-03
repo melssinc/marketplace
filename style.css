@@ -23,6 +23,7 @@ body {
   line-height: 1.6;
   color: var(--dark);
   overflow-x: hidden;
+  text-rendering: optimizeSpeed;
 }
 
 .container {
@@ -579,6 +580,7 @@ p { margin-bottom: 1rem; }
   display: flex;
   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   width: 100%;
+  will-change: transform;
 }
 
 .carousel-moderno-slide {
@@ -600,6 +602,8 @@ p { margin-bottom: 1rem; }
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
   background-color: #111;
   cursor: pointer;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .resultado-img:hover {
@@ -908,6 +912,7 @@ p { margin-bottom: 1rem; }
   gap: 20px;
   transition: transform 0.5s ease-in-out;
   padding: 10px;
+  will-change: transform;
 }
 
 .review-card-custom {
@@ -997,6 +1002,7 @@ p { margin-bottom: 1rem; }
 .review-modal {
   display: none;
   position: fixed;
+  content-visibility: auto;
   z-index: 5000;
   left: 0;
   top: 0;
