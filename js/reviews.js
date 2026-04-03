@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let index = 0;
     let interval;
+    let cardWidth = 0;
 
     function startSlider() {
         interval = setInterval(nextReview, 4000);
@@ -35,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function updatePosition() {
         const cards = document.querySelectorAll('.review-card-custom');
         if (cards.length === 0) return;
-        const cardWidth = cards[0].offsetWidth + 20; // Ancho + gap de 20px
+        if (!cardWidth || window.innerWidth <= 992) {
+            cardWidth = cards[0].offsetWidth + 20;
+        }
         track.style.transform = `translateX(-${index * cardWidth}px)`;
     }
 
@@ -46,9 +49,14 @@ document.addEventListener('DOMContentLoaded', function() {
         updatePosition();
     });
 
+    let reviewResizeTimeout;
     window.addEventListener('resize', () => {
-        index = 0;
-        updatePosition();
+        clearTimeout(reviewResizeTimeout);
+        reviewResizeTimeout = setTimeout(() => {
+            index = 0;
+            cardWidth = 0;
+            updatePosition();
+        }, 200);
     });
 
     startSlider();
