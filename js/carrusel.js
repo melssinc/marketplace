@@ -14,11 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let currentSlide = 0;
     let totalSlides = 0;
+    let lastImagenesPorSlide = 0;
     const TOTAL_IMAGENES = 37;
     
     function crearCarrusel() {
-        track.innerHTML = '';
-        
         let imagenesPorSlide = 4;
         if (window.innerWidth <= 992) {
             imagenesPorSlide = 3;
@@ -26,7 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth <= 576) {
             imagenesPorSlide = 2; // Mantenemos 2 para que se vea como una galería real en móvil
         }
-        
+
+        // Evitar reconstruir si no ha cambiado el layout
+        if (imagenesPorSlide === lastImagenesPorSlide) return;
+        lastImagenesPorSlide = imagenesPorSlide;
+
+        track.innerHTML = '';
+        const fragment = document.createDocumentFragment();
         totalSlides = Math.ceil(TOTAL_IMAGENES / imagenesPorSlide);
         console.log('Creando ' + totalSlides + ' slides');
         
@@ -44,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.alt = 'Cliente ' + imgNum + ' transformado con ProTrainer';
                 img.className = 'resultado-img';
                 img.loading = 'lazy';
+                img.width = 300; // Ayuda a reservar espacio (CLS)
+                img.height = 400;
                 
                 img.onerror = function() {
                     console.log('Imagen ' + imgNum + ' no encontrada');
@@ -51,17 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200"><rect width="300" height="200" fill="#f0f0f0"/><text x="150" y="100" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Imagen ' + imgNum + '</text></svg>';
                 };
                 
-                // Evento para abrir la imagen en grande
-                img.addEventListener('click', function() {
-                    abrirLightbox(this.src, this.alt);
-                });
-                
                 slideDiv.appendChild(img);
             }
-            
-            track.appendChild(slideDiv);
+            fragment.appendChild(slideDiv);
         }
-        
+        track.appendChild(fragment);
+
         crearPuntos();
         actualizarPosicion();
         console.log('Carrusel creado exitosamente');
@@ -126,6 +128,13 @@ document.addEventListener('DOMContentLoaded', function() {
             nextButton.style.opacity = nextButton.disabled ? '0.5' : '1';
         }
     }
+
+    // Delegación de eventos para el Lightbox (más eficiente que 37 listeners)
+    track.addEventListener('click', function(e) {
+        if (e.target.classList.contains('resultado-img')) {
+            abrirLightbox(e.target.src, e.target.alt);
+        }
+    });
     
     if (nextButton) {
         nextButton.addEventListener('click', siguienteSlide);
